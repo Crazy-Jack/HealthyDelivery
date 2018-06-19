@@ -1,0 +1,24 @@
+/* pages/index/index.wxss */
+.haibao {
+  text-align: center;
+  width: 100%;
+}
+.haibao swiper {
+  height: 300rpx;
+}
+.slide-image {
+  width: 100%;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+}
+
+.nav-item {
+  width: 25%;
+  font-size: 13px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}

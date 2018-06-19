@@ -1,0 +1,55 @@
+<view class="content">
+  <view class="left">
+    <view class="{{flag==0?'select':'normal'}}" id='0' bindtap="switchNav">热销榜</view>
+    <view class="{{flag==1?'select':'normal'}}" id='1' bindtap='switchNav'>天天特价</view>
+    <view class="{{flag==2?'select':'normal'}}" id='2' bindtap='switchNav'>巧克力</view>
+    <view class="{{flag==3?'select':'normal'}}" id='3' bindtap='switchNav'>汤圆</view>
+    <view class="{{flag==4?'select':'normal'}}" id='4' bindtap='switchNav'>优选水果</view>
+    <view class="{{flag==5?'select':'normal'}}" id='5' bindtap='switchNav'>牛奶面包</view>
+    <view class="{{flag==6?'select':'normal'}}" id='6' bindtap='switchNav'>卤味熟食</view>
+    <view class="{{flag==7?'select':'normal'}}" id='7' bindtap='switchNav'>饮料酒水</view>
+    <view class="{{flag==8?'select':'normal'}}" id='8' bindtap='switchNav'>休闲零食</view>
+    <view class="{{flag==9?'select':'normal'}}" id='9' bindtap='switchNav'>方便速食</view>
+  </view>
+  <view class="right">
+    <view class="order">
+      <view>综合排名</view>
+      <view>按价格</view>
+      <view>按销量</view>
+    </view>
+    <view class="hr"></view>
+    <view class="category">
+      <swiper current="{{currentTab}}" style='height:500px' vertical="true" bindchange="changeSwiper">
+
+
+      <block wx:for="{{catagory}}">
+      <swiper-item>
+        <view wx:for="{{goods[index]}}" wx:for-item="gooditem" wx:for-index="goodindex">
+          <view class="item">
+            <view class="icon"><image src="{{gooditem.pic}}" style="width:80px; height:80px;"></image></view>
+            <view class="info">
+              <view class="name">{{gooditem.name}}</view>
+              <view class="priceInfo">
+                <view class="price">¥{{gooditem.price}}</view>
+                <block wx:if="{{!(counts[index][goodindex])}}">
+                  <view class="count" id="{{[gooditem.id, index, goodindex]}}" bindtap='addGoods'>+</view>
+                </block>
+                <block wx:else>
+                  <view class="countwithminus" id="{{[gooditem.id, index, goodindex]}}" bindtap='minusGoods'>-</view>
+                  <view class="countwithnum">{{counts[index][goodindex]}}</view>
+                  <view class="countwithadd" id="{{[gooditem.id, index, goodindex]}}" bindtap='addGoods'>+</view>
+                </block>
+              </view>
+            </view>
+          </view>
+          <view class="hr"></view>
+        </view>
+      </swiper-item>
+      </block>
+
+
+
+      </swiper>
+    </view>
+  </view>
+</view>

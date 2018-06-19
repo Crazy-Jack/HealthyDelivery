@@ -1,0 +1,37 @@
+<view class="haibao">
+<swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image" style="width:100%"/>
+    </swiper-item>
+  </block>
+</swiper>
+</view>
+
+<view class="nav">
+  <view class="nav-item">
+    <view>
+      <image src="/assets/img/nav-01.png" style="width:43px;height:39px"></image>
+    </view>
+    <view>每日热销</view>
+  </view>
+  <view class="nav-item">
+    <view>
+      <image src="/assets/img/nav-01.png" style="width:43px;height:39px"></image>
+    </view>
+    <view>健康监察</view>
+  </view>
+  <view class="nav-item">
+    <view>
+      <image src="/assets/img/nav-01.png" style="width:43px;height:39px"></image>
+    </view>
+    <view>健康日报</view>
+  </view>
+  <view class="nav-item">
+    <view id="to-orders" bindtap='toorder'>
+      <image src="/assets/img/nav-01.png" style="width:43px;height:39px"></image>
+    </view>
+    <view>立即下单</view>
+  </view>
+</view>
+

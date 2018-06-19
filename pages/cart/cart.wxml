@@ -1,0 +1,80 @@
+<view class="content">
+  
+  <block wx:if="{{notknowAddress}}">
+    <view class="address" bindtap='setAddress'>
+      <view class="desc"> 请输入您的配送地址 </view>
+      <view class="detail">></view>
+    </view>
+  </block>
+  <block wx:else>
+    <view class="address" bindtap='setAddress'>
+      <view class="desc"> 配送至: {{address}} </view>
+      <view class="detail">></view>
+    </view>
+  </block>
+  <view class="fullline"></view>
+
+
+
+  <view class="items">
+    <view class="dingdanbar">
+      <view class="dingdanicon">
+        <image src='/assets/img/dingdan.png' style='width:40px; height:40px;'></image>
+      </view>
+      <view class="dingdantext">您的订单</view>
+    </view>
+    <view class="hr"></view>
+    <checkbox-group bindchange="checkboxChange">
+
+    <block wx:for="{{orders}}">
+      <view class="item">
+        <view class="icon">
+          <checkbox value="{{item.id}}" checked="{{selected}}"/>
+        </view>
+        <view class="pic">
+          <image src="{{item.pic}}" style="width:70px; height: 70px;"></image>
+        </view>
+        <view class="order">
+          <view class="title">{{item.name}}</view>
+          <view class="priceInfo">
+            <view class="price">¥{{item.price}}</view>
+            <view class="minus" id="{{item.id}}" bindtap="minusGoods">-</view>
+            <view class="count"> {{item.count}} </view>
+            <view class="add" id="{{item.id}}" bindtap="addGoods">+</view>
+          </view>
+        </view>
+      </view>
+      <view class="hr"></view>
+    </block>
+
+    </checkbox-group>
+
+    
+    <checkbox-group bindchange="checkAll">
+      <view class="all">
+        <view> 
+          <checkbox checked='{{selectedAll}}'/>
+        </view>
+        <view class="selectAll">
+          全选
+        </view>
+        <view class="total">
+          共¥{{totalPrice}}元
+        </view>
+        <view class="opr">选好了</view>
+      </view>
+    </checkbox-group>
+  </view>
+
+
+
+
+
+
+
+
+
+
+
+</view>
+

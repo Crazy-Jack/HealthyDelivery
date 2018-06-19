@@ -1,0 +1,128 @@
+/* pages/orders/orders.wxss */
+.content {
+  display: flex;
+  flex-direction: row;
+  font-family: "Microsoft YaHei"
+}
+
+.left {
+  width: 25%;
+  font-size: 15px;
+}
+.left view {
+  text-align: center;
+  height: 45px;
+  line-height: 45px;
+}
+.select {
+  background-color: #ffffff;
+  border-left: 5px solid #FFD700;
+}
+.normal {
+  background-color: #f8f8f8;
+  border-left: 1px solid #f2f2f2;
+}
+.right {
+  width: 75%;
+  margin: 10px;
+}
+.order {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  padding: 10px;
+}
+.order view {
+  width: 33%;
+  font-size: 15px;
+}
+.hr {
+  border: 1px solid #cccccc;
+  opacity: 0.2;
+}
+
+.item {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+}
+
+.icon {
+  padding-right: 20px
+}
+
+.info {
+  width: 70%;
+}
+
+.name {
+  font-size: 16px;
+  text-align: left;
+}
+
+.priceInfo {
+  display: flex;
+  flex-direction: row;
+  margin-top: 15px;
+  align-items: center;
+}
+
+.price {
+  width: 70%;
+  font-size: 15px;
+  color: #ff0000;
+  text-align: left;
+}
+
+.count {
+  background-color: #FFD700;
+  border-radius: 20px;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  color: #000000;
+  text-align: center;
+  font-weight: bold;
+  position: fixed;
+  right: 5px;
+}
+
+.countwithadd {
+  background-color: #FFD700;
+  border-radius: 20px;
+  line-height: 20px;
+  width: 20px;
+  height: 20px;
+  color: #000000;
+  text-align: center;
+  font-weight: bold;
+  position: fixed;
+  right: 5px;
+}
+
+.countwithminus {
+  border-radius: 20px;
+  line-height: 20px;
+  width: 20px;
+  height: 20px;
+  color: #000000;
+  text-align: center;
+  font-weight: bold;
+  position: fixed;
+  right: 65px;
+  border: 1px solid #cccccc;
+  color: #cccccc;
+}
+
+.countwithnum {
+  line-height: 20px;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  padding-left: 5px;
+  padding-right: 5px;
+  position: fixed;
+  right: 30px;
+  font-size: 15px;
+  font-weight: bold;
+}

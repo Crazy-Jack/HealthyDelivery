@@ -1,0 +1,86 @@
+/* pages/address/address.wxss */
+.content {
+  background-color: #f9f9f8;
+  height: 620px;
+  font-family: "Microsoft YaHei";
+}
+.hr {
+  height: 20px;
+}
+
+.line {
+  margin-left: 10px;
+  margin-right: 10px;
+  border: 1px solid #cccccc;
+  opacity: 0.2
+}
+.item {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  height: 75px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 0px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-right: 2px solid rgba(204, 204, 204, 0.2);
+}
+
+.info {
+  width: 80%;
+  line-height: 35px;
+}
+
+.name {
+  margin-left: 20px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.name text {
+  margin-right: 20px;
+}
+
+.address {
+  margin-left: 20px;
+  font-size: 13px;
+  color: #999999;
+}
+
+.address text {
+  margin-right: 10px;
+}
+
+.opr {
+  border-left: 1px solid #f2f2f2;
+  line-height: 85px;
+  width: 20%;
+  text-align: center;
+}
+
+.select {
+  border-left: 5px solid #ffd600;
+}
+
+.bg {
+  position: fixed;
+  bottom: 0px;
+  background-color: #ffffff;
+  height: 55px;
+  width: 100%;
+  border: 1px solid #f2f2f2;
+}
+
+.newAddress {
+  border: 1px solid #f2f2f2;
+  width: 220px;
+  height: 35px;
+  background-color: #ffd600;
+  line-height: 35px;
+  text-align: center;
+  border-radius: 5px;
+  margin: 0 auto;
+  margin-top: 10px;
+  font-size: 16px;
+}

@@ -1,0 +1,47 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/orders/orders",
+    "pages/cart/cart",    
+    "pages/me/me",
+    "pages/address/address",
+    "pages/modaddress/modaddress"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#FFD700",
+    "navigationBarTitleText": "健康食堂，放心外卖",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "color": "#cccccc",
+    "selectedColor": "#ffffff",
+    "backgroundColor": "#4F4F4F",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "assets/img/shouye-false.png",
+        "selectedIconPath": "assets/img/shouye.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/orders/orders",
+        "iconPath": "assets/img/diancan-false.png",
+        "selectedIconPath": "assets/img/diancan.png",
+        "text": "点餐"
+      },
+      {
+        "pagePath": "pages/cart/cart",
+        "iconPath": "assets/img/gouwuche-false.png",
+        "selectedIconPath": "assets/img/gouwuche.png",
+        "text": "购物车"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "iconPath": "assets/img/wode-false.png",
+        "selectedIconPath": "assets/img/wode.png",
+        "text": "我的"
+      }
+    ]
+  }
+}

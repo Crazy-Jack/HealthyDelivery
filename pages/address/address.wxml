@@ -1,0 +1,24 @@
+<view class="content">
+  <view class="hr"></view>
+  <view class="line"></view>
+  <view class="item">
+    <view class="info {{flag==0?'select':'normal'}}" id="0" bindtap="switchNav">
+      <view class="name">
+        <text>刘凯</text>
+        <text>15523448111</text>
+      </view>
+      <view class="address">
+        <text>中山大学东校区</text>
+        <text>至善园</text>
+        <text>7号</text>
+      </view>
+    </view>
+    <view class="opr">
+      <image src="/assets/img/change.png" style='width:33px; height:33px;'></image>
+    </view>
+  </view>
+  <view class="line"></view>
+  <view class="bg" bindtap='newAddress'>
+    <view class="newAddress">+ 新增地址</view>
+  </view>
+</view>
